@@ -1,0 +1,27 @@
+{
+  "name": "PetPointPaster",
+  "description": "Parses PetPoint reports for animal names and presents them as a simple list (by animal type)",
+  "author": "Ryan Nichols (rybread@gmail.com)",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "permissions": ["activeTab", "declarativeContent", "tabs", "storage"],
+  "icons": {
+    "16": "images/petpoint128.png",
+    "32": "images/petpoint128.png",
+    "48": "images/petpoint128.png",
+    "128": "images/petpoint128.png"
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/petpoint128.png",
+      "32": "images/petpoint128.png",
+      "48": "images/petpoint128.png",
+      "128": "images/petpoint128.png"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
